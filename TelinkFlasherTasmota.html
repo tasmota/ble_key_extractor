@@ -548,8 +548,8 @@ window.onload = function() {
       document.querySelector("#cb").innerHTML = keyscallback;
       document.title = 'MI Device '+macstr;
       document.querySelector("#tasmota").classList.remove('hidden');
-      document.querySelector("#tasmota2").classList.remove('hidden');
-      document.querySelector("#nontasmota").classList.add('hidden');
+      //document.querySelector("#tasmota2").classList.remove('hidden');
+      //document.querySelector("#nontasmota").classList.add('hidden');
     } else {
       document.querySelector("#tasmota").classList.add('hidden');
       document.querySelector("#tasmota2").classList.add('hidden');
@@ -758,7 +758,8 @@ function do_login_generate() {
 </script>
 <big><big>Telink Flasher for Mi Thermostat</big></big><br>
 Copyright: Aaron Christophel / Atc1441  <a href="https://atcnetz.de">https://ATCnetz.de</a><br/>
-<a href="https://atc1441.github.io/TelinkFlasher.html">Original TeleLink Flasher</a><br/>
+<a href="https://atc1441.github.io/TelinkFlasher.html">Original TeleLink Flasher - use original atc firmware configuration and for flashing</a><br/>
+<a href="https://pvvx.github.io/ATC_MiThermometer/TelinkMiFlasher.html">pvvx TeleLink Flasher - use for pvvx firmware configuration and for flashing</a><br/>
 Adapted by Simon Hailes / btsimonh <a href="https://github.com/btsimonh/atc1441.github.io">(github)</a><br/>
 <a href="https://btsimonh.github.io/atc1441.github.io/TelinkFlasherTasmota.html">Raw page (without Tamsmota query string - e.g. for ATC firmware options)</a><br/>
 <div id="tasmota" class="hidden tasmota">
@@ -811,6 +812,7 @@ Adapted by Simon Hailes / btsimonh <a href="https://github.com/btsimonh/atc1441.
 </div>
 
 <div id="nontasmota">
+  <h2>Note: this may be out of date - you are better to visit the links above</h2><br/>
 <a href="https://youtu.be/NXKzFG61lNs">Video Manual</a> <a href="https://github.com/atc1441/ATC_MiThermometer">Custom firmware repo</a><br><br>
   <button type="button" onclick="connect();">Connect</button>
   <button type="button" onclick="reConnect();">Reconnect</button><br>
