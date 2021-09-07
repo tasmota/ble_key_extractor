@@ -1,4 +1,4 @@
-# atc1441.github.io
+# https://tasmota.github.io/ble_key_extractor/
 
 This is an adapted version of TeleLinkFLasher by atc1441, adapted to accept a query string containing a MAC address plus a callback URL.
 
